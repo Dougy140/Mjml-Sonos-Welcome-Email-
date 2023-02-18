@@ -1,6 +1,21 @@
-<mjml>
+
+  <mjml>
   <mj-head>
 	<mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter&family=Lora&display=swap"/>
+	<mj-style>
+  /* Media query for screens up to 480px */
+  @media only screen and (max-width: 480px) {
+    /* Center the social icons */
+    .social-icons {
+      text-align: center !important;
+    }
+    /* Display columns as inline-block with margin */
+    .social-icons .mj-column {
+      display: inline-block !important;
+      margin: 0 10px !important;
+    }
+  }
+</mj-style>
   </mj-head>
   <mj-body>
 	
@@ -26,38 +41,40 @@
     </mj-section>
 		
 		<!--Bottom Section -->
-    <mj-section padding="30px 40px" background-color="#D8D8D8">
+    <mj-section padding="0px" background-color="#D8D8D8">
       <mj-column>
-      <mj-text font-size="34px" font-weight="bold">Shop Sonos</mj-text>
-      <mj-text font-size="34px" font-weight="bold">Find a store</mj-text>
-      <mj-text font-size="34px" font-weight="bold">Privacy Policy</mj-text>
-      <mj-text font-size="34px" font-weight="bold">User Terms</mj-text>      
+      <mj-text padding="30px 40px" font-size="34px" font-weight="bold">Shop Sonos</mj-text>
+      <mj-text padding="20px 40px" font-size="34px" font-weight="bold">Find a store</mj-text>
+      <mj-text padding="20px 40px" font-size="34px" font-weight="bold">Privacy Policy</mj-text>
+      <mj-text padding="20px 40px" font-size="34px" font-weight="bold">User Terms</mj-text>      
       </mj-column>
     </mj-section>
-    <mj-section padding="30px 40px" background-color="#D8D8D8">
-      <mj-column padding="0px">
-      <mj-image width="50px" height="40px" src="https://assets.sonos.com/email/graphics/CommonElements/footer-twitter-logo.png" />
-      </mj-column>
-      <mj-column padding="0px">
-      <mj-image width="50px" height="40px" src="https://assets.sonos.com/email/graphics/CommonElements/footer-facebook-logo.png" />
-      </mj-column>
-      <mj-column padding="0px">
-      <mj-image  width="50px" height="40px" src="https://assets.sonos.com/email/graphics/CommonElements/footer-instagram-logo.png" />
-      </mj-column>
-      <mj-column padding="0px">
-      <mj-image width="50px" height="40px"  src="https://assets.sonos.com/email/graphics/CommonElements/footer-youtube-logo.png" />
-      </mj-column>
-</mj-section> 
-	<mj-section padding="30px 40px" background-color="#D8D8D8">
+    <mj-section padding="20px 40px" background-color="#D8D8D8">
+  <mj-group css-class="social-icons" direction="ltr">
+    <mj-column padding="0px">
+      <mj-image width="20px" height="20px" src="https://assets.sonos.com/email/graphics/CommonElements/footer-twitter-logo.png" />
+    </mj-column>
+    <mj-column padding="0px">
+      <mj-image width="20px" height="20px" src="https://assets.sonos.com/email/graphics/CommonElements/footer-facebook-logo.png" />
+    </mj-column>
+    <mj-column padding="0px">
+      <mj-image width="20px" height="20px" src="https://assets.sonos.com/email/graphics/CommonElements/footer-instagram-logo.png" />
+    </mj-column>
+    <mj-column padding="0px">
+      <mj-image width="20px" height="20px" src="https://assets.sonos.com/email/graphics/CommonElements/footer-youtube-logo.png" />
+    </mj-column>
+  </mj-group>
+</mj-section>
+	<mj-section padding="0px" background-color="#D8D8D8">
 	<mj-column>
-	  <mj-text color="#000000" font-size="12px">Unsubscribe</mj-text>
-	  <mj-text color="#000000" font-size="12px">Manage Email Preferences</mj-text>
-	  <mj-text  color="#000000" line-height="1.2"font-size="12px">2020 by Sonos, Inc. All rights reserved. Sonos and Sonos product names are trademarks or registered trademarks of Sonos, Inc. All other product names
+	  <mj-text padding="0px 40px" color="#000000" font-size="12px">Unsubscribe</mj-text>
+	  <mj-text padding="10px 40px" color="#000000" font-size="12px">Manage Email Preferences</mj-text>
+	  <mj-text padding="10px 40px" color="#000000" line-height="1.2"font-size="12px">2020 by Sonos, Inc. All rights reserved. Sonos and Sonos product names are trademarks or registered trademarks of Sonos, Inc. All other product names
 and services may be trademarks or servicemarks of their respective owners.</mj-text>
-	  <mj-text  color="#000000" font-size="12px">Sonos, Inc., 614 Chapala Street, Santa Barbara, CA 93101</mj-text>
-	  <mj-text  color="#000000" font-size="12px">You are subscribed as: %%EmailAddress%% </mj-text>
-	  <mj-text  color="#000000" font-size="12px">To receive the latest updates from Sonos please add <u><b>sonos@email.sonos.com</b></u> to your address book.</mj-text>
-	  <mj-text  color="#000000" font-size="12px">To view this email as a web page, click <u>here</u></mj-text>
+	  <mj-text padding="10px 40px" color="#000000" font-size="12px">Sonos, Inc., 614 Chapala Street, Santa Barbara, CA 93101</mj-text>
+	  <mj-text padding="10px 40px" color="#000000" font-size="12px">You are subscribed as: %%EmailAddress%% </mj-text>
+	  <mj-text padding="10px 40px" color="#000000" font-size="12px">To receive the latest updates from Sonos please add <u><b>sonos@email.sonos.com</b></u> to your address book.</mj-text>
+	  <mj-text padding="10px 40px"  color="#000000" font-size="12px">To view this email as a web page, click <u>here</u></mj-text>
 	</mj-column>
 	</mj-section>
   </mj-body>
