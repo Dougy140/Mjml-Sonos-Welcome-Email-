@@ -1,5 +1,5 @@
 # Mjml-Sonos-Welcome-Email-
-This a redesign of Sonos' welcome email in MMJML.
+This a redesign of Sonos' welcome email in MJML.
 
 
 The email is designed to introduce new users to the Sonos brand and help them get started with their new Sonos products.
